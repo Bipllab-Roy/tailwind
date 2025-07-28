@@ -1,1 +1,81 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@layer base {
+   body{
+      @apply font-Manrope;
+   }
+   p {
+      @apply text-base leading-[1.6] font-normal text-gray-7;
+   }
+
+   h3 {
+      @apply text-[24px] text-[#12fdee] leading-[1.4] font-extrabold;
+   }
+    h4 {
+      @apply text-[24px] text-gray-9 leading-[1.4] font-extrabold;
+   }
+
+   h1 {
+      font-size: 50px;
+   }
+
+  h2 {
+   @apply text-[35px] text-gray-9 leading-[1.4] font-extrabold;
+  }
+
+}
+
+
+@layer components {
+   .ami {
+      @apply border border-dashed text-center font-bold text-blue-900 border-yellow-300 text-2xl;
+   }
+
+   .common_btn {
+      @apply bg-primary py-2 px-3 text-white rounded-[4px] cursor-pointer;
+   }
+}
+
+/* @layer */
+
+
+@theme {
+   --color-primary: #6366F1;
+   --color-gray-1: #F3F6FF;
+   --color-gray-2: #E2E5F1;
+   --color-gray-3: #E2E5F1;
+   --color-gray-4: #565973;
+   --color-gray-5: #B4B7C9;
+   --color-gray-6: #9397AD;
+   --color-gray-7: #565973;
+   --color-gray-8: #33354D;
+   --color-gray-9: #0B0F19;
+   
+
+   /* Breakpoints */
+
+   --breakpoint-*: initial;
+   --breakpoint-sm: 40rem;
+   --breakpoint-md: 60rem;
+   --breakpoint-lg: 64rem;
+   --breakpoint-xl: 80rem;
+   --breakpoint-2xl: 87.25rem;
+
+   /* Font family */
+    --font-Manrope: "Manrope", sans-serif;
+
+    /* Shadows */
+    --shadow-1: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06),  0 2px 6.4px -1px rgba(19, 16, 34, 0.03); 
+    /* --shadow-2: 0 2px 6.4px -1px rgba(19, 16, 34, 0.03);  */
+
+}
+
+@utility container {
+   margin-inline: auto;
+
+}
+/* .c{
+   box-shadow: rgba(19, 16, 34, 0.06) ;
+} */
