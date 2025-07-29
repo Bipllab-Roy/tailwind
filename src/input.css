@@ -3,27 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 @layer base {
-   body{
+   body {
       @apply font-Manrope;
    }
+
    p {
       @apply text-base leading-[1.6] font-normal text-gray-7;
    }
 
    h3 {
-      @apply text-[24px] text-[#12fdee] leading-[1.4] font-extrabold;
+      @apply text-[28px] text-gray-9 leading-[1.3] font-extrabold;
    }
-    h4 {
+
+   h4 {
       @apply text-[24px] text-gray-9 leading-[1.4] font-extrabold;
+   }
+
+   h2 {
+      @apply text-[40px] text-gray-9 leading-[1.3] font-extrabold;
    }
 
    h1 {
       font-size: 50px;
    }
-
-  h2 {
-   @apply text-[35px] text-gray-9 leading-[1.4] font-extrabold;
-  }
 
 }
 
@@ -52,7 +54,8 @@
    --color-gray-7: #565973;
    --color-gray-8: #33354D;
    --color-gray-9: #0B0F19;
-   
+   --color-border:#D4D7E5;
+
 
    /* Breakpoints */
 
@@ -64,11 +67,11 @@
    --breakpoint-2xl: 87.25rem;
 
    /* Font family */
-    --font-Manrope: "Manrope", sans-serif;
+   --font-Manrope: "Manrope", sans-serif;
 
-    /* Shadows */
-    --shadow-1: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06),  0 2px 6.4px -1px rgba(19, 16, 34, 0.03); 
-    /* --shadow-2: 0 2px 6.4px -1px rgba(19, 16, 34, 0.03);  */
+   /* Shadows */
+   --shadow-1: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+   /* --shadow-2: 0 2px 6.4px -1px rgba(19, 16, 34, 0.03);  */
 
 }
 
@@ -76,6 +79,7 @@
    margin-inline: auto;
 
 }
+
 /* .c{
    box-shadow: rgba(19, 16, 34, 0.06) ;
 } */
